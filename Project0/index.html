@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="topbar">
+            <div>
+                <a class="topitem" href="Images.html">Search images</a>
+            </div>
+            <div>
+                <a class="topitem" href="Advanced.html">Advanced search</a>
+            </div>
+        </div>
+        <div class="searchbar">
+            <form action="https://google.com/search">
+                <div style="width: 100%;">
+                    <input style="width:300px;" type="text" name="q">
+                    <input style="float:none;" type="submit" value="Google Search">
+                </div>
+            </form>
+            <form action="https://google.com/search">
+                <div style="width: 100%;">
+                    <input type="hidden" name="q" id="randomLucky">
+                    <input style="float:none;" type="submit" value="I'm feeling lucky">
+                </div>
+                <script>
+                    var randomItem = function getlucky() {
+                        var luckyArray = [
+                        "racoons",
+                        "opossums",
+                        "cats",
+                        "dogs"
+                        ];
+        
+                        return luckyArray[Math.floor(Math.random()*luckyArray.length)];
+                    }
+        
+                    document.getElementById('randomLucky').value = randomItem();
+                </script>
+            </form>
+        </div>
+    </body>
+</html>
