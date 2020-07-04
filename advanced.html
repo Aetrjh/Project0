@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="topbar">
+            <div>
+                <a class="topitem" href="index.html">Main page</a>
+            </div>
+        </div>
+        Find pages with...
+        <div>
+            <form action="https://google.com/search">
+                <div>
+                    <div class="col-25">
+                        all of these words:
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="as_q">
+                    </div>
+                </div>
+                <div>
+                    <div class="col-25">
+                        this exact word or phrase:
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="as_epq">
+                    </div>
+                </div>
+                <div>
+                    <div class="col-25">
+                        any of these words:
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="as_oq">
+                    </div>
+                </div>
+                <div>
+                    <div class="col-25">
+                        none of these words:
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="as_eq">
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" value="Search">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
